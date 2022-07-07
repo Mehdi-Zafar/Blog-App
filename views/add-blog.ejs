@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs')%>
+  <body>
+    <%- include('./partials/nav.ejs')%>
+
+    <div>
+      <form action="/add-blog" method="post">
+        <h1>Add Blog</h1>
+        <label for="title">Title:</label><br />
+        <input type="text" id="title" placeholder="Enter title" name="title"/><br /><br />
+        <label for="snippet">Snippet:</label><br />
+        <input
+          type="text"
+          id="snippet"
+          placeholder="Enter snippet"
+          name="snippet"
+        /><br /><br />
+        <label for="body">Body:</label><br />
+        <textarea type="text" id="body" placeholder="Enter body" name="body"/></textarea><br /><br />
+        <button>Submit</button>
+      </form>
+    </div>
+    <%- include('./partials/footer.ejs')%>
+  </body>
+</html>
